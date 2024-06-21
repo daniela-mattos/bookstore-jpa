@@ -1,6 +1,6 @@
 ## Bookstore APP
 
-<p>Exercício proposto pela Professora Michelli Brito no YouTube, vídeo "Spring Data JPA": https://www.youtube.com/watch?v=Ca30sv9EbLo</p>
+<p>Exercício proposto pela Professora Michelli Brito no YouTube, vídeo "Spring Data JPA | Curso 2024": https://www.youtube.com/watch?v=Ca30sv9EbLo</p>
 <p>O banco de dados utilizado na aplicação foi o PgAdmin (Postgres)</p>
 
 <h3>Diagrama de Classes</h3>
