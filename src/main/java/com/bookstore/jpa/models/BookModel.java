@@ -1,5 +1,6 @@
 package com.bookstore.jpa.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -19,7 +20,9 @@ public class BookModel implements Serializable {
     @Column(nullable = false, unique = true)
     private String title;
 
-    //@JsonProperty(access = JsonProperty.Access.WRITE_ONLY
+    //@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    //o código comentado faz com que numa busca pelo livro, não sejam mostrados detalhes desses atributos
+    //sem eles, aparece id e nome da editora, assim como autor
     @ManyToOne//(fetch = FetchType.LAZY)
     @JoinColumn(name = "publisher_id")
     private PublisherModel publisher;
@@ -75,4 +78,5 @@ public class BookModel implements Serializable {
     public void setReview(ReviewModel review) {
         this.review = review;
     }
+
 }
